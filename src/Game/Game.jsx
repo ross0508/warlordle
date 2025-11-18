@@ -1,18 +1,23 @@
 import {useState, useEffect} from 'react'
-import {warlords} from '../data/Warlords'
+import {threeKingdoms} from '../data/ThreeKingdoms'
+import {warlordEra} from '../data/WarlordEra'
 
-export default function Game(setpageState) {
+export default function Game({ setPageState, gameMode }) {
 
     
     const [inputText, setInputText] = useState("")
     const [guesses, setGuesses] = useState([])
     const [target, setTarget] = useState({})
     const [hasWon, setHasWon] = useState(false)
+    const warlords = gameMode === 'threeKingdoms' ? threeKingdoms : warlordEra;
+
+    
 
     useEffect(() => {
+    
         setTarget(warlords[Math.floor(Math.random() * warlords.length)]);
-         
-    }, [])
+    }, [warlords]);
+
     const handleInput = (e) => {
         setInputText(e.target.value)
     }
@@ -21,7 +26,7 @@ export default function Game(setpageState) {
         if (!inputText) {
             return;
         }
-
+    
         const warlord = warlords.find(warlord => warlord.name.toUpperCase() === inputText.toUpperCase());
 
         if (!warlord) {

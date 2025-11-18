@@ -1,4 +1,4 @@
-export const warlords = [
+export const threeKingdoms = [
   {
     name: "Cao Cao",
     dynasty: "Eastern Han",
