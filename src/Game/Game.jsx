@@ -67,6 +67,8 @@ export default function Game({ setPageState, gameMode }) {
             {hasWon && <div className='container'>
                 <h1>YOU WIN</h1>
                 <p>{target.name}</p>
+                <p>{guesses.length} Guesses</p>
+                <button onClick={() => setPageState('home')} className='button'>Play Again</button>
             </div>}
         </div>
     )
