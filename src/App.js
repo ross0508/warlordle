@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1>warlordle</h1>
       <h2>sugma ligma amogus baka</h2>
+      <p>MUSTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARD</p>
     </div>
   );
 }
