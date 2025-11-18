@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../Main.css'
 import Home from '../Home/Home'
 import Game from '../Game/Game'
 export default function Main() {
