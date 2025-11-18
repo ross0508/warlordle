@@ -1,14 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Main from "./Main/Main";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>warlordle</h1>
-      <h2>sugma ligma amogus baka</h2>
-      <p>MUSTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARD</p>
-    </div>
-  );
+  return <Main></Main>;
 }
 
 export default App;
