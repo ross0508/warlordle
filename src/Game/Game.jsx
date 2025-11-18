@@ -53,6 +53,9 @@ export default function Game(setpageState) {
                         <p className={guess.name === target.name ? 'correct' : 'incorrect'}><strong>Name:</strong> {guess.name}</p>
                         <p className={guess.dynasty === target.dynasty ? 'correct' : 'incorrect'}><strong>Dynasty:</strong> {guess.dynasty}</p>
                         <p className={guess.faction === target.faction ? 'correct' : 'incorrect'}><strong>Faction:</strong> {guess.faction}</p>
+                        <p className={guess.title === target.title ? 'correct' : 'incorrect'}><strong>Title:</strong> {guess.title}</p>
+                        <p className={guess.birth_year === target.birth_year ? 'correct' : 'incorrect'}><strong>Birth Year:</strong> {guess.birth_year} {guess.birth_year < target.birth_year ? '↑' : guess.birth_year > target.birth_year ? '↓' : ''}</p>
+                        <p className={guess.death_year === target.death_year ? 'correct' : 'incorrect'}><strong>Death Year:</strong> {guess.death_year} {guess.death_year < target.death_year ? '↑' : guess.death_year > target.death_year ? '↓' : ''}</p>
                     </div>))}
                 </div>
             </div>}
